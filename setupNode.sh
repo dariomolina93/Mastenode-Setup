@@ -13,7 +13,7 @@ apt-get update
 apt-get -y install python-virtualenv
 git clone https://github.com/dashpay/sentinel.git
 apt-get install -y /root/.wolfcoin/sentinel/virtualenv
-virtualenv /root/.wolfcoin/sentinel/./venv
+/root/.wolfcoin/sentinel/virtualenv /root/.wolfcoin/sentinel/./venv
 /root/.wolfcoin/sentinel/./venv/bin/pip install -r /root/.wolfcoin/sentinel/requirements.txt
 
 echo "dash_conf=/root/.wolfcoin/wolfcoin.conf" >> /root/.wolfcoin/sentinel/sentinel.conf
