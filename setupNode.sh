@@ -12,9 +12,10 @@ ufw status
 apt-get update
 apt-get -y install python-virtualenv
 git clone https://github.com/dashpay/sentinel.git
-apt-get install -y /root/.wolfcoin/sentinel/virtualenv
-/root/.wolfcoin/sentinel/virtualenv /root/.wolfcoin/sentinel/./venv
-/root/.wolfcoin/sentinel/./venv/bin/pip install -r /root/.wolfcoin/sentinel/requirements.txt
+cd /root/.wolfcoin/sentinel/
+apt-get install -y virtualenv
+virtualenv ./venv
+./venv/bin/pip install -r requirements.txt
 
 echo "dash_conf=/root/.wolfcoin/wolfcoin.conf" >> /root/.wolfcoin/sentinel/sentinel.conf
 pkill -9 -f wolfcoind
