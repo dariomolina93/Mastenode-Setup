@@ -1,8 +1,8 @@
 #!/bin/bash
 echo "rpcconnect=127.0.0.1" >> /root/.wolfcoin/wolfcoin.conf
-echo "rpcport=4835" >> /root/.wolfcoin/wolfcoin.confwolfcoin.conf
-echo "rpcuser=am12341234" >> /root/.wolfcoin/wolfcoin.confwolfcoin.conf
-echo "rpcpassword=am12341234" >> /root/.wolfcoin/wolfcoin.confwolfcoin.conf
+echo "rpcport=4835" >> /root/.wolfcoin/wolfcoin.conf
+echo "rpcuser=am12341234" >> /root/.wolfcoin/wolfcoin.conf
+echo "rpcpassword=am12341234" >> /root/.wolfcoin/wolfcoin.conf
 
 ufw limit ssh/tcp
 ufw allow 4836/tcp
