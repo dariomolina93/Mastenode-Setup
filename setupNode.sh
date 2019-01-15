@@ -19,4 +19,5 @@ virtualenv ./venv
 
 echo "dash_conf=/root/.wolfcoin/wolfcoin.conf" >> /root/.wolfcoin/sentinel/sentinel.conf
 pkill -9 -f wolfcoind
+wolfcoind -daemon
 wolfcoin-cli mnsync status
